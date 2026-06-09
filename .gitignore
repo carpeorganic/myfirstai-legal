@@ -3,3 +3,15 @@ Thumbs.db
 *.swp
 .vscode/
 .idea/
+
+# 내부 런칭/합규 문서 — PUBLIC repo에 커밋 금지(비공개 my-first-ai/docs/launch 로 관리)
+store-listing.md
+screenshots-plan.md
+apple-app-privacy.md
+apple-kids-category.md
+google-play-data-safety.md
+google-play-designed-for-families.md
+launch_*.html
+launch_*.pdf
+ads_remaining.*
+play-feature-graphic-*.png
