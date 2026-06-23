@@ -39,12 +39,6 @@
                 <td>Maintaining service stability, diagnosing errors, analyzing usage statistics, improving features</td>
             </tr>
             <tr>
-                <td>Advertising data (Android, when ads are shown)</td>
-                <td>Approximate location (estimated from IP), app interactions (app launches, taps, video views), diagnostic information, device/other identifiers (App Set ID, etc. — <strong>excluding the advertising ID (AAID)</strong>)</td>
-                <td>Collected and transmitted by the ad SDK when ads (AdMob) are shown on Android. <strong>No ads are served on iOS, so this data is not collected there.</strong></td>
-                <td>Serving non-personalized (contextual) ads, ad performance measurement, fraud prevention</td>
-            </tr>
-            <tr>
                 <td>Payment information (for in-app purchases)</td>
                 <td>Transaction identifier (order number), product name, payment amount, payment date/time, receipt information (issued by Apple App Store / Google Play)</td>
                 <td>Collected through the payment platform when the user makes an in-app purchase</td>
@@ -92,11 +86,6 @@
                 <td>Anonymous identifier, usage logs, diagnostic information, pseudonymized AI inputs/responses</td>
             </tr>
             <tr>
-                <td>Google LLC (AdMob)</td>
-                <td>Serving non-personalized ads on Android, performance measurement, fraud prevention</td>
-                <td>Approximate location (IP-based), app interactions, diagnostic information, App Set ID (excluding advertising ID)</td>
-            </tr>
-            <tr>
                 <td>Google LLC (Gemini), fal.ai, Pollinations.ai</td>
                 <td>AI response generation</td>
                 <td>Pseudonymized AI inputs (a child’s nickname and AI name are not sent as actual values)</td>
@@ -132,12 +121,12 @@
     </ul>
 
     <h2>9. Advertising and Advertising Identifiers</h2>
-    <p>This app <strong>does not use advertising identifiers (IDFA/AAID).</strong> On Android, the advertising-ID permission is blocked and only child-directed, <strong>non-personalized (contextual) ads</strong> are used, so no behavior-based personalized ads are served. <strong>No ads are served on iOS.</strong> Ads appear only in the parent area; there are no ads on the screens children use.</p>
+    <p>This app <strong>does not serve advertising and does not use advertising identifiers (IDFA/AAID).</strong> On Android, the advertising-ID (AD_ID) permission is blocked; on iOS, no tracking-related features are used. No behavior-based personalized ads are served.</p>
 
     <h2>10. Protection of Children (Under 13)</h2>
     <p>This Service is designed primarily for children and complies with the Apple Kids Category and Google Play Designed for Families policies, as well as the U.S. COPPA and applicable Korean laws. For children, the following apply.</p>
     <ul>
-        <li>No personalized (behavior-based) advertising is served, and no advertising identifier is collected.</li>
+        <li>No advertising is served, and no advertising identifier is collected.</li>
         <li>A child’s potentially real-name input (nickname, AI-friend name) is replaced with a pseudonymous token, so actual values are never sent to the external AI.</li>
         <li>Purchases and external links are accessible only behind a <strong>parental gate (math problem + PIN)</strong>.</li>
         <li>There is no sign-up, so directly identifying information such as name, email, or phone number is not collected.</li>
